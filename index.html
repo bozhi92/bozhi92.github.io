@@ -1,1042 +1,161 @@
 <!doctype html>
 <html>
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>bozhi92</title>
-    <meta name="description" content="demo">
-    <meta name="keywords" content="index">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="icon" type="image/png" href="assets/i/favicon.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
-    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
-    <link rel="stylesheet" href="assets/css/amazeui.min.css" />
-    <link rel="stylesheet" href="assets/css/admin.css">
-    <link rel="stylesheet" href="assets/css/app.css">
-    <script src="assets/js/echarts.min.js"></script>
+<meta charset="gbk">
+<title>bozhi92µÄ²©¿Í</title>
+<meta name="keywords" content="¸öÈË²©¿Í,bozhi92¸öÈË²©¿Í,bozhi92" />
+<meta name="description" content="bozhi92" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/base.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<link href="css/m.css" rel="stylesheet">
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/comm.js"></script>
+<!--[if lt IE 9]>
+<script src="js/modernizr.js"></script>
+<![endif]-->
 </head>
-
-<body data-type="index">
-
-
-    <header class="am-topbar am-topbar-inverse admin-header">
-        <div class="am-topbar-brand">
-            <a href="javascript:;" class="tpl-logo">
-                <img src="assets/img/logo.png" alt="">
-            </a>
-        </div>
-        <div class="am-icon-list tpl-header-nav-hover-ico am-fl am-margin-right">
-
-        </div>
-
-        <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#topbar-collapse'}"><span class="am-sr-only">å¯¼èˆªåˆ‡æ¢</span> <span class="am-icon-bars"></span></button>
-
-        <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
-
-            <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list tpl-header-list">
-                <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
-                    <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
-                        <span class="am-icon-bell-o"></span> æé†’ <span class="am-badge tpl-badge-success am-round">5</span></span>
-                    </a>
-                    <ul class="am-dropdown-content tpl-dropdown-content">
-                        <li class="tpl-dropdown-content-external">
-                            <h3>ä½ æœ‰ <span class="tpl-color-success">5</span> æ¡æé†’</h3><a href="###">å…¨éƒ¨</a></li>
-                        <li class="tpl-dropdown-list-bdbc"><a href="#" class="tpl-dropdown-list-fl"><span class="am-icon-btn am-icon-plus tpl-dropdown-ico-btn-size tpl-badge-success"></span> ã€é¢„è§ˆæ¨¡å—ã€‘ç§»åŠ¨ç«¯ æŸ¥çœ‹æ—¶ æ‰‹æœºã€ç”µè„‘æ¡†éšè—ã€‚</a>
-                            <span class="tpl-dropdown-list-fr">3å°æ—¶å‰</span>
-                        </li>
-                        <li class="tpl-dropdown-list-bdbc"><a href="#" class="tpl-dropdown-list-fl"><span class="am-icon-btn am-icon-check tpl-dropdown-ico-btn-size tpl-badge-danger"></span> ç§»åŠ¨ç«¯ï¼Œå¯¼èˆªæ¡ä¸‹è¾¹è·å¤„ç†</a>
-                            <span class="tpl-dropdown-list-fr">15åˆ†é’Ÿå‰</span>
-                        </li>
-                        <li class="tpl-dropdown-list-bdbc"><a href="#" class="tpl-dropdown-list-fl"><span class="am-icon-btn am-icon-bell-o tpl-dropdown-ico-btn-size tpl-badge-warning"></span> è¿½åŠ ç»Ÿè®¡ä»£ç </a>
-                            <span class="tpl-dropdown-list-fr">2å¤©å‰</span>
-                        </li>
-                    </ul>
-                </li>
-                <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
-                    <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
-                        <span class="am-icon-comment-o"></span> æ¶ˆæ¯ <span class="am-badge tpl-badge-danger am-round">9</span></span>
-                    </a>
-                    <ul class="am-dropdown-content tpl-dropdown-content">
-                        <li class="tpl-dropdown-content-external">
-                            <h3>ä½ æœ‰ <span class="tpl-color-danger">9</span> æ¡æ–°æ¶ˆæ¯</h3><a href="###">å…¨éƒ¨</a></li>
-                        <li>
-                            <a href="#" class="tpl-dropdown-content-message">
-                                <span class="tpl-dropdown-content-photo">
-                      <img src="assets/img/user02.png" alt=""> </span>
-                                <span class="tpl-dropdown-content-subject">
-                      <span class="tpl-dropdown-content-from"> ç¦è¨€å°å¼  </span>
-                                <span class="tpl-dropdown-content-time">10åˆ†é’Ÿå‰ </span>
-                                </span>
-                                <span class="tpl-dropdown-content-font"> Amaze UI çš„è¯žç”Ÿï¼Œä¾æ‰˜äºŽ GitHub åŠå…¶ä»–æŠ€æœ¯ç¤¾åŒºä¸Šä¸€äº›ä¼˜ç§€çš„èµ„æºï¼›Amaze UI çš„æˆé•¿ï¼Œåˆ™ç¦»ä¸å¼€ç”¨æˆ·çš„æ”¯æŒã€‚ </span>
-                            </a>
-                            <a href="#" class="tpl-dropdown-content-message">
-                                <span class="tpl-dropdown-content-photo">
-                      <img src="assets/img/user03.png" alt=""> </span>
-                                <span class="tpl-dropdown-content-subject">
-                      <span class="tpl-dropdown-content-from"> Steam </span>
-                                <span class="tpl-dropdown-content-time">18åˆ†é’Ÿå‰</span>
-                                </span>
-                                <span class="tpl-dropdown-content-font"> ä¸ºäº†èƒ½æœ€å‡†ç¡®çš„ä¼ è¾¾æ‰€æè¿°çš„é—®é¢˜ï¼Œ å»ºè®®ä½ åœ¨åé¦ˆæ—¶é™„ä¸Šæ¼”ç¤ºï¼Œæ–¹ä¾¿æˆ‘ä»¬ç†è§£ã€‚ </span>
-                            </a>
-                        </li>
-
-                    </ul>
-                </li>
-                <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
-                    <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
-                        <span class="am-icon-calendar"></span> è¿›åº¦ <span class="am-badge tpl-badge-primary am-round">4</span></span>
-                    </a>
-                    <ul class="am-dropdown-content tpl-dropdown-content">
-                        <li class="tpl-dropdown-content-external">
-                            <h3>ä½ æœ‰ <span class="tpl-color-primary">4</span> ä¸ªä»»åŠ¡è¿›åº¦</h3><a href="###">å…¨éƒ¨</a></li>
-                        <li>
-                            <a href="javascript:;" class="tpl-dropdown-content-progress">
-                                <span class="task">
-                        <span class="desc">Amaze UI ç”¨æˆ·ä¸­å¿ƒ v1.2 </span>
-                                <span class="percent">45%</span>
-                                </span>
-                                <span class="progress">
-                        <div class="am-progress tpl-progress am-progress-striped"><div class="am-progress-bar am-progress-bar-success" style="width:45%"></div></div>
-                    </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;" class="tpl-dropdown-content-progress">
-                                <span class="task">
-                        <span class="desc">æ–°é—»å†…å®¹é¡µ </span>
-                                <span class="percent">30%</span>
-                                </span>
-                                <span class="progress">
-                       <div class="am-progress tpl-progress am-progress-striped"><div class="am-progress-bar am-progress-bar-secondary" style="width:30%"></div></div>
-                    </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;" class="tpl-dropdown-content-progress">
-                                <span class="task">
-                        <span class="desc">ç®¡ç†ä¸­å¿ƒ </span>
-                                <span class="percent">60%</span>
-                                </span>
-                                <span class="progress">
-                        <div class="am-progress tpl-progress am-progress-striped"><div class="am-progress-bar am-progress-bar-warning" style="width:60%"></div></div>
-                    </span>
-                            </a>
-                        </li>
-
-                    </ul>
-                </li>
-                <li class="am-hide-sm-only"><a href="javascript:;" id="admin-fullscreen" class="tpl-header-list-link"><span class="am-icon-arrows-alt"></span> <span class="admin-fullText">å¼€å¯å…¨å±</span></a></li>
-
-                <li class="am-dropdown" data-am-dropdown data-am-dropdown-toggle>
-                    <a class="am-dropdown-toggle tpl-header-list-link" href="javascript:;">
-                        <span class="tpl-header-list-user-nick">ç¦è¨€å°å¼ </span><span class="tpl-header-list-user-ico"> <img src="assets/img/user01.png"></span>
-                    </a>
-                    <ul class="am-dropdown-content">
-                        <li><a href="#"><span class="am-icon-bell-o"></span> èµ„æ–™</a></li>
-                        <li><a href="#"><span class="am-icon-cog"></span> è®¾ç½®</a></li>
-                        <li><a href="#"><span class="am-icon-power-off"></span> é€€å‡º</a></li>
-                    </ul>
-                </li>
-                <li><a href="###" class="tpl-header-list-link"><span class="am-icon-sign-out tpl-header-list-ico-out-size"></span></a></li>
-            </ul>
-        </div>
-    </header>
-
-
-
-
-
-
-
-    <div class="tpl-page-container tpl-page-header-fixed">
-
-
-        <div class="tpl-left-nav tpl-left-nav-hover">
-            <div class="tpl-left-nav-title">
-                Amaze UI åˆ—è¡¨
-            </div>
-            <div class="tpl-left-nav-list">
-                <ul class="tpl-left-nav-menu">
-                    <li class="tpl-left-nav-item">
-                        <a href="index.html" class="nav-link active">
-                            <i class="am-icon-home"></i>
-                            <span>é¦–é¡µ</span>
-                        </a>
-                    </li>
-                    <li class="tpl-left-nav-item">
-                        <a href="chart.html" class="nav-link tpl-left-nav-link-list">
-                            <i class="am-icon-bar-chart"></i>
-                            <span>æ•°æ®è¡¨</span>
-                            <i class="tpl-left-nav-content tpl-badge-danger">
-               12
-             </i>
-                        </a>
-                    </li>
-
-                    <li class="tpl-left-nav-item">
-                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
-                            <i class="am-icon-table"></i>
-                            <span>è¡¨æ ¼</span>
-                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
-                        </a>
-                        <ul class="tpl-left-nav-sub-menu">
-                            <li>
-                                <a href="table-font-list.html">
-                                    <i class="am-icon-angle-right"></i>
-                                    <span>æ–‡å­—è¡¨æ ¼</span>
-                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
-                                </a>
-
-                                <a href="table-images-list.html">
-                                    <i class="am-icon-angle-right"></i>
-                                    <span>å›¾ç‰‡è¡¨æ ¼</span>
-                                    <i class="tpl-left-nav-content tpl-badge-success">
-               18
-             </i>
-
-                                    <a href="form-news.html">
-                                        <i class="am-icon-angle-right"></i>
-                                        <span>æ¶ˆæ¯åˆ—è¡¨</span>
-                                        <i class="tpl-left-nav-content tpl-badge-primary">
-               5
-             </i>
-
-
-                                        <a href="form-news-list.html">
-                                            <i class="am-icon-angle-right"></i>
-                                            <span>æ–‡å­—åˆ—è¡¨</span>
-
-                                        </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="tpl-left-nav-item">
-                        <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
-                            <i class="am-icon-wpforms"></i>
-                            <span>è¡¨å•</span>
-                            <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right tpl-left-nav-more-ico-rotate"></i>
-                        </a>
-                        <ul class="tpl-left-nav-sub-menu" style="display: block;">
-                            <li>
-                                <a href="form-amazeui.html">
-                                    <i class="am-icon-angle-right"></i>
-                                    <span>Amaze UI è¡¨å•</span>
-                                    <i class="am-icon-star tpl-left-nav-content-ico am-fr am-margin-right"></i>
-                                </a>
-
-                                <a href="form-line.html">
-                                    <i class="am-icon-angle-right"></i>
-                                    <span>çº¿æ¡è¡¨å•</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="tpl-left-nav-item">
-                        <a href="login.html" class="nav-link tpl-left-nav-link-list">
-                            <i class="am-icon-key"></i>
-                            <span>ç™»å½•</span>
-
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-
-
-
-
-        <div class="tpl-content-wrapper">
-            <div class="tpl-content-page-title">
-                Amaze UI é¦–é¡µç»„ä»¶
-            </div>
-            <ol class="am-breadcrumb">
-                <li><a href="#" class="am-icon-home">é¦–é¡µ</a></li>
-                <li><a href="#">åˆ†ç±»</a></li>
-                <li class="am-active">å†…å®¹</li>
-            </ol>
-            <div class="tpl-content-scope">
-                <div class="note note-info">
-                    <h3>Amaze UI ä¸ºç§»åŠ¨è€Œç”Ÿ
-                        <span class="close" data-close="note"></span>
-                    </h3>
-                    <p> Amaze UI å«è¿‘ 20 ä¸ª CSS ç»„ä»¶ã€20 ä½™ JS ç»„ä»¶ï¼Œæ›´æœ‰å¤šä¸ªåŒ…å«ä¸åŒä¸»é¢˜çš„ Web ç»„ä»¶ï¼Œå¯å¿«é€Ÿæž„å»ºç•Œé¢å‡ºè‰²ã€ä½“éªŒä¼˜ç§€çš„è·¨å±é¡µé¢ï¼Œå¤§å¹…æå‡å¼€å‘æ•ˆçŽ‡ã€‚</p>
-                    <p><span class="label label-danger">æç¤º:</span> Amaze UI å…³æ³¨ä¸­æ–‡æŽ’ç‰ˆï¼Œæ ¹æ®ç”¨æˆ·ä»£ç†è°ƒæ•´å­—ä½“ï¼Œå®žçŽ°æ›´å¥½çš„ä¸­æ–‡æŽ’ç‰ˆæ•ˆæžœã€‚
-                    </p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="am-u-lg-3 am-u-md-6 am-u-sm-12">
-                    <div class="dashboard-stat blue">
-                        <div class="visual">
-                            <i class="am-icon-comments-o"></i>
-                        </div>
-                        <div class="details">
-                            <div class="number"> 1349 </div>
-                            <div class="desc"> æ–°æ¶ˆæ¯ </div>
-                        </div>
-                        <a class="more" href="#"> æŸ¥çœ‹æ›´å¤š
-                    <i class="m-icon-swapright m-icon-white"></i>
-                </a>
-                    </div>
-                </div>
-                <div class="am-u-lg-3 am-u-md-6 am-u-sm-12">
-                    <div class="dashboard-stat red">
-                        <div class="visual">
-                            <i class="am-icon-bar-chart-o"></i>
-                        </div>
-                        <div class="details">
-                            <div class="number"> 62% </div>
-                            <div class="desc"> æ”¶è§†çŽ‡ </div>
-                        </div>
-                        <a class="more" href="#"> æŸ¥çœ‹æ›´å¤š
-                    <i class="m-icon-swapright m-icon-white"></i>
-                </a>
-                    </div>
-                </div>
-                <div class="am-u-lg-3 am-u-md-6 am-u-sm-12">
-                    <div class="dashboard-stat green">
-                        <div class="visual">
-                            <i class="am-icon-apple"></i>
-                        </div>
-                        <div class="details">
-                            <div class="number"> 653 </div>
-                            <div class="desc"> è‹¹æžœè®¾å¤‡ </div>
-                        </div>
-                        <a class="more" href="#"> æŸ¥çœ‹æ›´å¤š
-                    <i class="m-icon-swapright m-icon-white"></i>
-                </a>
-                    </div>
-                </div>
-                <div class="am-u-lg-3 am-u-md-6 am-u-sm-12">
-                    <div class="dashboard-stat purple">
-                        <div class="visual">
-                            <i class="am-icon-android"></i>
-                        </div>
-                        <div class="details">
-                            <div class="number"> 786 </div>
-                            <div class="desc"> å®‰å“è®¾å¤‡ </div>
-                        </div>
-                        <a class="more" href="#"> æŸ¥çœ‹æ›´å¤š
-                    <i class="m-icon-swapright m-icon-white"></i>
-                </a>
-                    </div>
-                </div>
-
-
-
-            </div>
-
-            <div class="row">
-                <div class="am-u-md-6 am-u-sm-12 row-mb">
-                    <div class="tpl-portlet">
-                        <div class="tpl-portlet-title">
-                            <div class="tpl-caption font-green ">
-                                <i class="am-icon-cloud-download"></i>
-                                <span> Cloud æ•°æ®ç»Ÿè®¡</span>
-                            </div>
-                            <div class="actions">
-                                <ul class="actions-btn">
-                                    <li class="red-on">æ˜¨å¤©</li>
-                                    <li class="green">å‰å¤©</li>
-                                    <li class="blue">æœ¬å‘¨</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!--æ­¤éƒ¨åˆ†æ•°æ®è¯·åœ¨ jsæ–‡ä»¶å¤¹ä¸‹ä¸­çš„ app.js ä¸­çš„ â€œç™¾åº¦å›¾è¡¨Aâ€ å¤„ä¿®æ”¹æ•°æ® æ’ä»¶ä½¿ç”¨çš„æ˜¯ ç™¾åº¦echarts-->
-                        <div class="tpl-echarts" id="tpl-echarts-A">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="am-u-md-6 am-u-sm-12 row-mb">
-                    <div class="tpl-portlet">
-                        <div class="tpl-portlet-title">
-                            <div class="tpl-caption font-red ">
-                                <i class="am-icon-bar-chart"></i>
-                                <span> Cloud åŠ¨æ€èµ„æ–™</span>
-                            </div>
-                            <div class="actions">
-                                <ul class="actions-btn">
-                                    <li class="purple-on">æ˜¨å¤©</li>
-                                    <li class="green">å‰å¤©</li>
-                                    <li class="dark">æœ¬å‘¨</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="tpl-scrollable">
-                            <div class="number-stats">
-                                <div class="stat-number am-fl am-u-md-6">
-                                    <div class="title am-text-right"> Total </div>
-                                    <div class="number am-text-right am-text-warning"> 2460 </div>
-                                </div>
-                                <div class="stat-number am-fr am-u-md-6">
-                                    <div class="title"> Total </div>
-                                    <div class="number am-text-success"> 2460 </div>
-                                </div>
-
-                            </div>
-
-                            <table class="am-table tpl-table">
-                                <thead>
-                                    <tr class="tpl-table-uppercase">
-                                        <th>äººå‘˜</th>
-                                        <th>ä½™é¢</th>
-                                        <th>æ¬¡æ•°</th>
-                                        <th>æ•ˆçŽ‡</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <img src="assets/img/user01.png" alt="" class="user-pic">
-                                            <a class="user-name" href="###">ç¦è¨€å°å¼ </a>
-                                        </td>
-                                        <td>ï¿¥3213</td>
-                                        <td>65</td>
-                                        <td class="font-green bold">26%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="assets/img/user02.png" alt="" class="user-pic">
-                                            <a class="user-name" href="###">Alex.</a>
-                                        </td>
-                                        <td>ï¿¥2635</td>
-                                        <td>52</td>
-                                        <td class="font-green bold">32%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="assets/img/user03.png" alt="" class="user-pic">
-                                            <a class="user-name" href="###">Tinker404</a>
-                                        </td>
-                                        <td>ï¿¥1267</td>
-                                        <td>65</td>
-                                        <td class="font-green bold">51%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="assets/img/user04.png" alt="" class="user-pic">
-                                            <a class="user-name" href="###">Arron.y</a>
-                                        </td>
-                                        <td>ï¿¥657</td>
-                                        <td>65</td>
-                                        <td class="font-green bold">73%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="assets/img/user05.png" alt="" class="user-pic">
-                                            <a class="user-name" href="###">Yves</a>
-                                        </td>
-                                        <td>ï¿¥3907</td>
-                                        <td>65</td>
-                                        <td class="font-green bold">12%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="assets/img/user06.png" alt="" class="user-pic">
-                                            <a class="user-name" href="###">å°é»„é¸¡</a>
-                                        </td>
-                                        <td>ï¿¥900</td>
-                                        <td>65</td>
-                                        <td class="font-green bold">10%</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="row">
-                <div class="am-u-md-6 am-u-sm-12 row-mb">
-
-                    <div class="tpl-portlet">
-                        <div class="tpl-portlet-title">
-                            <div class="tpl-caption font-green ">
-                                <span>æŒ‡æ´¾ä»»åŠ¡</span>
-                                <span class="caption-helper">16 ä»¶</span>
-                            </div>
-                            <div class="tpl-portlet-input">
-                                <div class="portlet-input input-small input-inline">
-                                    <div class="input-icon right">
-                                        <i class="am-icon-search"></i>
-                                        <input type="text" class="form-control form-control-solid" placeholder="æœç´¢..."> </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="wrapper" class="wrapper">
-                            <div id="scroller" class="scroller">
-                                <ul class="tpl-task-list">
-                                    <li>
-                                        <div class="task-checkbox">
-                                            <input type="hidden" value="1" name="test">
-                                            <input type="checkbox" class="liChild" value="2" name="test"> </div>
-                                        <div class="task-title">
-                                            <span class="task-title-sp"> Amaze UI Icon ç»„ä»¶ç›®å‰ä½¿ç”¨äº† Font Awesome </span>
-                                            <span class="label label-sm label-success">æŠ€æœ¯éƒ¨</span>
-                                            <span class="task-bell">
-                                            <i class="am-icon-bell-o"></i>
-                                        </span>
-                                        </div>
-                                        <div class="task-config">
-                                            <div class="am-dropdown tpl-task-list-dropdown" data-am-dropdown>
-                                                <a href="###" class="am-dropdown-toggle tpl-task-list-hover " data-am-dropdown-toggle>
-                                                    <i class="am-icon-cog"></i> <span class="am-icon-caret-down"></span>
-                                                </a>
-                                                <ul class="am-dropdown-content tpl-task-list-dropdown-ul">
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-check"></i> ä¿å­˜ </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-pencil"></i> ç¼–è¾‘ </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-trash-o"></i> åˆ é™¤ </a>
-                                                    </li>
-                                                </ul>
-
-
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="task-checkbox">
-                                            <input type="hidden" value="1" name="test">
-                                            <input type="checkbox" class="liChild" value="2" name="test"> </div>
-                                        <div class="task-title">
-                                            <span class="task-title-sp"> åœ¨ data-am-dropdown é‡ŒæŒ‡å®šè¦é€‚åº”åˆ°çš„å…ƒç´ ï¼Œä¸‹æ‹‰å†…å®¹çš„å®½åº¦ä¼šè®¾ç½®ä¸ºè¯¥å…ƒç´ çš„å®½åº¦ã€‚å½“ç„¶å¯ä»¥ç›´æŽ¥åœ¨ CSS é‡Œè®¾ç½®ä¸‹æ‹‰å†…å®¹çš„å®½åº¦ã€‚ </span>
-                                            <span class="label label-sm label-danger">è¿è¥</span>
-
-                                        </div>
-                                        <div class="task-config">
-                                            <div class="am-dropdown tpl-task-list-dropdown" data-am-dropdown>
-                                                <a href="###" class="am-dropdown-toggle tpl-task-list-hover " data-am-dropdown-toggle>
-                                                    <i class="am-icon-cog"></i> <span class="am-icon-caret-down"></span>
-                                                </a>
-                                                <ul class="am-dropdown-content tpl-task-list-dropdown-ul">
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-check"></i> ä¿å­˜ </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-pencil"></i> ç¼–è¾‘ </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-trash-o"></i> åˆ é™¤ </a>
-                                                    </li>
-                                                </ul>
-
-
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="task-checkbox">
-                                            <input type="hidden" value="1" name="test">
-                                            <input type="checkbox" class="liChild" value="2" name="test"> </div>
-                                        <div class="task-title">
-                                            <span class="task-title-sp"> ä½¿ç”¨ LESSï¼š é€šè¿‡è®¾ç½®å˜é‡ @fa-font-path è¦†ç›–é»˜è®¤çš„å€¼ï¼Œå¦‚ @fa-font-path: "../fonts";ã€‚è¿™ä¸ªå˜é‡å®šä¹‰åœ¨ icon.less é‡Œã€‚ </span>
-                                            <span class="label label-sm label-warning">å¸‚åœºéƒ¨</span>
-
-                                        </div>
-                                        <div class="task-config">
-                                            <div class="am-dropdown tpl-task-list-dropdown" data-am-dropdown>
-                                                <a href="###" class="am-dropdown-toggle tpl-task-list-hover " data-am-dropdown-toggle>
-                                                    <i class="am-icon-cog"></i> <span class="am-icon-caret-down"></span>
-                                                </a>
-                                                <ul class="am-dropdown-content tpl-task-list-dropdown-ul">
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-check"></i> ä¿å­˜ </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-pencil"></i> ç¼–è¾‘ </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-trash-o"></i> åˆ é™¤ </a>
-                                                    </li>
-                                                </ul>
-
-
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="task-checkbox">
-                                            <input type="hidden" value="1" name="test">
-                                            <input type="checkbox" class="liChild" value="2" name="test"> </div>
-                                        <div class="task-title">
-                                            <span class="task-title-sp"> æ·»åŠ  .am-btn-group-justify class è®©æŒ‰é’®ç»„é‡Œçš„æŒ‰é’®å¹³å‡åˆ†å¸ƒï¼Œå¡«æ»¡å®¹å™¨å®½åº¦ã€‚ </span>
-                                            <span class="label label-sm label-default">å·²åºŸå¼ƒ</span>
-
-                                        </div>
-                                        <div class="task-config">
-                                            <div class="am-dropdown tpl-task-list-dropdown" data-am-dropdown>
-                                                <a href="###" class="am-dropdown-toggle tpl-task-list-hover " data-am-dropdown-toggle>
-                                                    <i class="am-icon-cog"></i> <span class="am-icon-caret-down"></span>
-                                                </a>
-                                                <ul class="am-dropdown-content tpl-task-list-dropdown-ul">
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-check"></i> ä¿å­˜ </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-pencil"></i> ç¼–è¾‘ </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-trash-o"></i> åˆ é™¤ </a>
-                                                    </li>
-                                                </ul>
-
-
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="task-checkbox">
-                                            <input type="hidden" value="1" name="test">
-                                            <input type="checkbox" class="liChild" value="2" name="test"> </div>
-                                        <div class="task-title">
-                                            <span class="task-title-sp"> æŒ‰ç…§ç¤ºä¾‹ç»„ç»‡å¥½ HTML ç»“æž„ï¼ˆä¸åŠ  data-am-dropdown å±žæ€§ï¼‰ï¼Œç„¶åŽé€šè¿‡ JS æ¥è°ƒç”¨ã€‚ </span>
-                                            <span class="label label-sm label-success">æŠ€æœ¯éƒ¨</span>
-                                            <span class="task-bell">
-                                            <i class="am-icon-bell-o"></i>
-                                        </span>
-                                        </div>
-                                        <div class="task-config">
-                                            <div class="am-dropdown tpl-task-list-dropdown" data-am-dropdown>
-                                                <a href="###" class="am-dropdown-toggle tpl-task-list-hover " data-am-dropdown-toggle>
-                                                    <i class="am-icon-cog"></i> <span class="am-icon-caret-down"></span>
-                                                </a>
-                                                <ul class="am-dropdown-content tpl-task-list-dropdown-ul">
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-check"></i> ä¿å­˜ </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-pencil"></i> ç¼–è¾‘ </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-trash-o"></i> åˆ é™¤ </a>
-                                                    </li>
-                                                </ul>
-
-
-                                            </div>
-                                        </div>
-                                    </li>
-
-
-                                    <li>
-                                        <div class="task-checkbox">
-                                            <input type="hidden" value="1" name="test">
-                                            <input type="checkbox" class="liChild" value="2" name="test"> </div>
-                                        <div class="task-title">
-                                            <span class="task-title-sp"> æ·»åŠ  .am-btn-group-justify class è®©æŒ‰é’®ç»„é‡Œçš„æŒ‰é’®å¹³å‡åˆ†å¸ƒï¼Œå¡«æ»¡å®¹å™¨å®½åº¦ã€‚ </span>
-                                            <span class="label label-sm label-default">å·²åºŸå¼ƒ</span>
-
-                                        </div>
-                                        <div class="task-config">
-                                            <div class="am-dropdown tpl-task-list-dropdown" data-am-dropdown>
-                                                <a href="###" class="am-dropdown-toggle tpl-task-list-hover " data-am-dropdown-toggle>
-                                                    <i class="am-icon-cog"></i> <span class="am-icon-caret-down"></span>
-                                                </a>
-                                                <ul class="am-dropdown-content tpl-task-list-dropdown-ul">
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-check"></i> ä¿å­˜ </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-pencil"></i> ç¼–è¾‘ </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-trash-o"></i> åˆ é™¤ </a>
-                                                    </li>
-                                                </ul>
-
-
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="task-checkbox">
-                                            <input type="hidden" value="1" name="test">
-                                            <input type="checkbox" class="liChild" value="2" name="test"> </div>
-                                        <div class="task-title">
-                                            <span class="task-title-sp"> ä½¿ç”¨ LESSï¼š é€šè¿‡è®¾ç½®å˜é‡ @fa-font-path è¦†ç›–é»˜è®¤çš„å€¼ï¼Œå¦‚ @fa-font-path: "../fonts";ã€‚è¿™ä¸ªå˜é‡å®šä¹‰åœ¨ icon.less é‡Œã€‚ </span>
-                                            <span class="label label-sm label-warning">å¸‚åœºéƒ¨</span>
-
-                                        </div>
-                                        <div class="task-config">
-                                            <div class="am-dropdown tpl-task-list-dropdown" data-am-dropdown>
-                                                <a href="###" class="am-dropdown-toggle tpl-task-list-hover " data-am-dropdown-toggle>
-                                                    <i class="am-icon-cog"></i> <span class="am-icon-caret-down"></span>
-                                                </a>
-                                                <ul class="am-dropdown-content tpl-task-list-dropdown-ul">
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-check"></i> ä¿å­˜ </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-pencil"></i> ç¼–è¾‘ </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-trash-o"></i> åˆ é™¤ </a>
-                                                    </li>
-                                                </ul>
-
-
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="task-checkbox">
-                                            <input type="hidden" value="1" name="test">
-                                            <input type="checkbox" class="liChild" value="2" name="test"> </div>
-                                        <div class="task-title">
-                                            <span class="task-title-sp"> æ·»åŠ  .am-btn-group-justify class è®©æŒ‰é’®ç»„é‡Œçš„æŒ‰é’®å¹³å‡åˆ†å¸ƒï¼Œå¡«æ»¡å®¹å™¨å®½åº¦ã€‚ </span>
-                                            <span class="label label-sm label-default">å·²åºŸå¼ƒ</span>
-
-                                        </div>
-                                        <div class="task-config">
-                                            <div class="am-dropdown tpl-task-list-dropdown" data-am-dropdown>
-                                                <a href="###" class="am-dropdown-toggle tpl-task-list-hover " data-am-dropdown-toggle>
-                                                    <i class="am-icon-cog"></i> <span class="am-icon-caret-down"></span>
-                                                </a>
-                                                <ul class="am-dropdown-content tpl-task-list-dropdown-ul">
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-check"></i> ä¿å­˜ </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-pencil"></i> ç¼–è¾‘ </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-trash-o"></i> åˆ é™¤ </a>
-                                                    </li>
-                                                </ul>
-
-
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="task-checkbox">
-                                            <input type="hidden" value="1" name="test">
-                                            <input type="checkbox" class="liChild" value="2" name="test"> </div>
-                                        <div class="task-title">
-                                            <span class="task-title-sp"> æŒ‰ç…§ç¤ºä¾‹ç»„ç»‡å¥½ HTML ç»“æž„ï¼ˆä¸åŠ  data-am-dropdown å±žæ€§ï¼‰ï¼Œç„¶åŽé€šè¿‡ JS æ¥è°ƒç”¨ã€‚ </span>
-                                            <span class="label label-sm label-success">æŠ€æœ¯éƒ¨</span>
-                                            <span class="task-bell">
-                                            <i class="am-icon-bell-o"></i>
-                                        </span>
-                                        </div>
-                                        <div class="task-config">
-                                            <div class="am-dropdown tpl-task-list-dropdown" data-am-dropdown>
-                                                <a href="###" class="am-dropdown-toggle tpl-task-list-hover " data-am-dropdown-toggle>
-                                                    <i class="am-icon-cog"></i> <span class="am-icon-caret-down"></span>
-                                                </a>
-                                                <ul class="am-dropdown-content tpl-task-list-dropdown-ul">
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-check"></i> ä¿å­˜ </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-pencil"></i> ç¼–è¾‘ </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript:;">
-                                                            <i class="am-icon-trash-o"></i> åˆ é™¤ </a>
-                                                    </li>
-                                                </ul>
-
-
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="am-u-md-6 am-u-sm-12 row-mb">
-                    <div class="tpl-portlet">
-                        <div class="tpl-portlet-title">
-                            <div class="tpl-caption font-green ">
-                                <span>é¡¹ç›®è¿›åº¦</span>
-                            </div>
-
-                        </div>
-
-                        <div class="am-tabs tpl-index-tabs" data-am-tabs>
-                            <ul class="am-tabs-nav am-nav am-nav-tabs">
-                                <li class="am-active"><a href="#tab1">è¿›è¡Œä¸­</a></li>
-                                <li><a href="#tab2">å·²å®Œæˆ</a></li>
-                            </ul>
-
-                            <div class="am-tabs-bd">
-                                <div class="am-tab-panel am-fade am-in am-active" id="tab1">
-                                    <div id="wrapperA" class="wrapper">
-                                        <div id="scroller" class="scroller">
-                                            <ul class="tpl-task-list tpl-task-remind">
-                                                <li>
-                                                    <div class="cosB">
-                                                        12åˆ†é’Ÿå‰
-                                                    </div>
-                                                    <div class="cosA">
-                                                        <span class="cosIco">
-                        <i class="am-icon-bell-o"></i>
-                      </span>
-
-                                                        <span> æ³¨æ„ï¼šChrome å’Œ Firefox ä¸‹ï¼Œ display: inline-block; æˆ– display: block; çš„å…ƒç´ æ‰ä¼šåº”ç”¨æ—‹è½¬åŠ¨ç”»ã€‚<span class="tpl-label-info"> æå–æ–‡ä»¶
-                                                            <i class="am-icon-share"></i>
-                                                        </span></span>
-                                                    </div>
-
-                                                </li>
-                                                <li>
-                                                    <div class="cosB">
-                                                        36åˆ†é’Ÿå‰
-                                                    </div>
-                                                    <div class="cosA">
-                                                        <span class="cosIco label-danger">
-                        <i class="am-icon-bolt"></i>
-                      </span>
-
-                                                        <span> FontAwesome åœ¨ç»˜åˆ¶å›¾æ ‡çš„æ—¶å€™ä¸åŒå›¾æ ‡å®½åº¦æœ‰å·®å¼‚ï¼Œ æ·»åŠ  .am-icon-fw å°†å›¾æ ‡è®¾ç½®ä¸ºå›ºå®šçš„å®½åº¦ï¼Œè§£å†³å®½åº¦ä¸ä¸€è‡´é—®é¢˜ï¼ˆv2.3 æ–°å¢žï¼‰ã€‚</span>
-                                                    </div>
-
-                                                </li>
-
-                                                <li>
-                                                    <div class="cosB">
-                                                        2å°æ—¶å‰
-                                                    </div>
-                                                    <div class="cosA">
-                                                        <span class="cosIco label-info">
-                        <i class="am-icon-bullhorn"></i>
-                      </span>
-
-                                                        <span> ä½¿ç”¨ flexbox å®žçŽ°ï¼Œåªå…¼å®¹ IE 10+ åŠå…¶ä»–çŽ°ä»£æµè§ˆå™¨ã€‚</span>
-                                                    </div>
-
-                                                </li>
-                                                <li>
-                                                    <div class="cosB">
-                                                        1å¤©å‰
-                                                    </div>
-                                                    <div class="cosA">
-                                                        <span class="cosIco label-warning">
-                        <i class="am-icon-plus"></i>
-                      </span>
-
-                                                        <span> éƒ¨åˆ†ç”¨æˆ·ååº”åœ¨è¿‡é•¿çš„ Tabs ä¸­æ»šåŠ¨é¡µé¢æ—¶ä¼šæ„å¤–è§¦å‘ Tab åˆ‡æ¢äº‹ä»¶ï¼Œç”¨æˆ·å¯ä»¥é€‰æ‹©ç¦ç”¨è§¦æŽ§æ“ä½œã€‚</span>
-                                                    </div>
-
-                                                </li>
-                                                <li>
-                                                    <div class="cosB">
-                                                        12åˆ†é’Ÿå‰
-                                                    </div>
-                                                    <div class="cosA">
-                                                        <span class="cosIco">
-                        <i class="am-icon-bell-o"></i>
-                      </span>
-
-                                                        <span> æ³¨æ„ï¼šChrome å’Œ Firefox ä¸‹ï¼Œ display: inline-block; æˆ– display: block; çš„å…ƒç´ æ‰ä¼šåº”ç”¨æ—‹è½¬åŠ¨ç”»ã€‚<span class="tpl-label-info"> æå–æ–‡ä»¶
-                                                            <i class="am-icon-share"></i>
-                                                        </span></span>
-                                                    </div>
-
-                                                </li>
-                                                <li>
-                                                    <div class="cosB">
-                                                        36åˆ†é’Ÿå‰
-                                                    </div>
-                                                    <div class="cosA">
-                                                        <span class="cosIco label-danger">
-                        <i class="am-icon-bolt"></i>
-                      </span>
-
-                                                        <span> FontAwesome åœ¨ç»˜åˆ¶å›¾æ ‡çš„æ—¶å€™ä¸åŒå›¾æ ‡å®½åº¦æœ‰å·®å¼‚ï¼Œ æ·»åŠ  .am-icon-fw å°†å›¾æ ‡è®¾ç½®ä¸ºå›ºå®šçš„å®½åº¦ï¼Œè§£å†³å®½åº¦ä¸ä¸€è‡´é—®é¢˜ï¼ˆv2.3 æ–°å¢žï¼‰ã€‚</span>
-                                                    </div>
-
-                                                </li>
-
-                                                <li>
-                                                    <div class="cosB">
-                                                        2å°æ—¶å‰
-                                                    </div>
-                                                    <div class="cosA">
-                                                        <span class="cosIco label-info">
-                        <i class="am-icon-bullhorn"></i>
-                      </span>
-
-                                                        <span> ä½¿ç”¨ flexbox å®žçŽ°ï¼Œåªå…¼å®¹ IE 10+ åŠå…¶ä»–çŽ°ä»£æµè§ˆå™¨ã€‚</span>
-                                                    </div>
-
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="am-tab-panel am-fade" id="tab2">
-                                    <div id="wrapperB" class="wrapper">
-                                        <div id="scroller" class="scroller">
-                                            <ul class="tpl-task-list tpl-task-remind">
-                                                <li>
-                                                    <div class="cosB">
-                                                        12åˆ†é’Ÿå‰
-                                                    </div>
-                                                    <div class="cosA">
-                                                        <span class="cosIco">
-                        <i class="am-icon-bell-o"></i>
-                      </span>
-
-                                                        <span> æ³¨æ„ï¼šChrome å’Œ Firefox ä¸‹ï¼Œ display: inline-block; æˆ– display: block; çš„å…ƒç´ æ‰ä¼šåº”ç”¨æ—‹è½¬åŠ¨ç”»ã€‚<span class="tpl-label-info"> æå–æ–‡ä»¶
-                                                            <i class="am-icon-share"></i>
-                                                        </span></span>
-                                                    </div>
-
-                                                </li>
-                                                <li>
-                                                    <div class="cosB">
-                                                        36åˆ†é’Ÿå‰
-                                                    </div>
-                                                    <div class="cosA">
-                                                        <span class="cosIco label-danger">
-                        <i class="am-icon-bolt"></i>
-                      </span>
-
-                                                        <span> FontAwesome åœ¨ç»˜åˆ¶å›¾æ ‡çš„æ—¶å€™ä¸åŒå›¾æ ‡å®½åº¦æœ‰å·®å¼‚ï¼Œ æ·»åŠ  .am-icon-fw å°†å›¾æ ‡è®¾ç½®ä¸ºå›ºå®šçš„å®½åº¦ï¼Œè§£å†³å®½åº¦ä¸ä¸€è‡´é—®é¢˜ï¼ˆv2.3 æ–°å¢žï¼‰ã€‚</span>
-                                                    </div>
-
-                                                </li>
-
-                                                <li>
-                                                    <div class="cosB">
-                                                        2å°æ—¶å‰
-                                                    </div>
-                                                    <div class="cosA">
-                                                        <span class="cosIco label-info">
-                        <i class="am-icon-bullhorn"></i>
-                      </span>
-
-                                                        <span> ä½¿ç”¨ flexbox å®žçŽ°ï¼Œåªå…¼å®¹ IE 10+ åŠå…¶ä»–çŽ°ä»£æµè§ˆå™¨ã€‚</span>
-                                                    </div>
-
-                                                </li>
-                                                <li>
-                                                    <div class="cosB">
-                                                        1å¤©å‰
-                                                    </div>
-                                                    <div class="cosA">
-                                                        <span class="cosIco label-warning">
-                        <i class="am-icon-plus"></i>
-                      </span>
-
-                                                        <span> éƒ¨åˆ†ç”¨æˆ·ååº”åœ¨è¿‡é•¿çš„ Tabs ä¸­æ»šåŠ¨é¡µé¢æ—¶ä¼šæ„å¤–è§¦å‘ Tab åˆ‡æ¢äº‹ä»¶ï¼Œç”¨æˆ·å¯ä»¥é€‰æ‹©ç¦ç”¨è§¦æŽ§æ“ä½œã€‚</span>
-                                                    </div>
-
-                                                </li>
-                                                <li>
-                                                    <div class="cosB">
-                                                        12åˆ†é’Ÿå‰
-                                                    </div>
-                                                    <div class="cosA">
-                                                        <span class="cosIco">
-                        <i class="am-icon-bell-o"></i>
-                      </span>
-
-                                                        <span> æ³¨æ„ï¼šChrome å’Œ Firefox ä¸‹ï¼Œ display: inline-block; æˆ– display: block; çš„å…ƒç´ æ‰ä¼šåº”ç”¨æ—‹è½¬åŠ¨ç”»ã€‚<span class="tpl-label-info"> æå–æ–‡ä»¶
-                                                            <i class="am-icon-share"></i>
-                                                        </span></span>
-                                                    </div>
-
-                                                </li>
-                                                <li>
-                                                    <div class="cosB">
-                                                        36åˆ†é’Ÿå‰
-                                                    </div>
-                                                    <div class="cosA">
-                                                        <span class="cosIco label-danger">
-                        <i class="am-icon-bolt"></i>
-                      </span>
-
-                                                        <span> FontAwesome åœ¨ç»˜åˆ¶å›¾æ ‡çš„æ—¶å€™ä¸åŒå›¾æ ‡å®½åº¦æœ‰å·®å¼‚ï¼Œ æ·»åŠ  .am-icon-fw å°†å›¾æ ‡è®¾ç½®ä¸ºå›ºå®šçš„å®½åº¦ï¼Œè§£å†³å®½åº¦ä¸ä¸€è‡´é—®é¢˜ï¼ˆv2.3 æ–°å¢žï¼‰ã€‚</span>
-                                                    </div>
-
-                                                </li>
-
-                                                <li>
-                                                    <div class="cosB">
-                                                        2å°æ—¶å‰
-                                                    </div>
-                                                    <div class="cosA">
-                                                        <span class="cosIco label-info">
-                        <i class="am-icon-bullhorn"></i>
-                      </span>
-
-                                                        <span> ä½¿ç”¨ flexbox å®žçŽ°ï¼Œåªå…¼å®¹ IE 10+ åŠå…¶ä»–çŽ°ä»£æµè§ˆå™¨ã€‚</span>
-                                                    </div>
-
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-
-        </div>
-
-    </div>
-
-
-    <script src="http://www.jq22.com/jquery/jquery-2.1.1.js"></script>
-    <script src="assets/js/amazeui.min.js"></script>
-    <script src="assets/js/iscroll.js"></script>
-    <script src="assets/js/app.js"></script>
+<body>
+<header class="header-navigation" id="header">
+  <nav><div class="logo"><a href="/">bozhi92¸öÈË²©¿Í</a></div>
+    <h2 id="mnavh"><span class="navicon"></span></h2>
+    <ul id="starlist">
+      <li><a href="index.html">ÍøÕ¾Ê×Ò³</a></li>
+      <li><a href="share.html">ÎÒµÄÏà²á</a></li>
+      <li><a href="list.html">ÎÒµÄÈÕ¼Ç</a></li>
+      <li><a href="about.html">¹ØÓÚÎÒ</a></li>
+      <li><a href="gbook.html">ÁôÑÔ</a></li>
+      <li><a href="info.html">ÄÚÈÝÒ³</a></li>
+      <li><a href="infopic.html">ÄÚÈÝÒ³</a></li>
+    </ul>
+</nav>
+</header>
+<article>
+  <aside class="l_box">
+      <div class="about_me">
+        <h2>¹ØÓÚÎÒ</h2>
+        <ul>
+          <i><img src="images/4.jpg"></i>
+          <p><b>bozhi92</b>£¬Ò»¸ö80ºó²Ý¸ùÅ®Õ¾³¤£¡09ÄêÈëÐÐ¡£Ò»Ö±Ç±ÐÄÑÐ¾¿webÇ°¶Ë¼¼Êõ£¬Ò»±ß¹¤×÷Ò»±ß»ýÀÛ¾­Ñé£¬·ÖÏíÒ»Ð©¸öÈË²©¿ÍÄ£°å£¬ÒÔ¼°SEOÓÅ»¯µÈÐÄµÃ¡£</p>
+        </ul>
+      </div>
+      <div class="wdxc">
+        <h2>ÎÒµÄÏà²á</h2>
+        <ul>
+          <li><a href="/"><img src="images/7.jpg"></a></li>
+          <li><a href="/"><img src="images/8.jpg"></a></li>
+          <li><a href="/"><img src="images/9.jpg"></a></li>
+          <li><a href="/"><img src="images/10.jpg"></a></li>
+          <li><a href="/"><img src="images/11.jpg"></a></li>
+          <li><a href="/"><img src="images/12.jpg"></a></li>
+        </ul>
+      </div>
+      <div class="search">
+        <form action="/e/search/index.php" method="post" name="searchform" id="searchform">
+          <input name="keyboard" id="keyboard" class="input_text" value="ÇëÊäÈë¹Ø¼ü×Ö´Ê" style="color: rgb(153, 153, 153);" onfocus="if(value=='ÇëÊäÈë¹Ø¼ü×Ö´Ê'){this.style.color='#000';value=''}" onblur="if(value==''){this.style.color='#999';value='ÇëÊäÈë¹Ø¼ü×Ö´Ê'}" type="text">
+          <input name="show" value="title" type="hidden">
+          <input name="tempid" value="1" type="hidden">
+          <input name="tbname" value="news" type="hidden">
+          <input name="Submit" class="input_submit" value="ËÑË÷" type="submit">
+        </form>
+      </div>
+      <div class="fenlei">
+        <h2>ÎÄÕÂ·ÖÀà</h2>
+        <ul>
+          <li><a href="/">Ñ§ÎÞÖ¹¾³£¨33£©</a></li>
+          <li><a href="/">ÈÕ¼Ç£¨19£©</a></li>
+          <li><a href="/">ÂýÉú»î£¨520£©</a></li>
+          <li><a href="/">ÃÀÎÄÐÀÉÍ£¨40£©</a></li>
+        </ul>
+      </div>
+      <div class="tuijian">
+        <h2>Õ¾³¤ÍÆ¼ö</h2>
+        <ul>
+          <li><a href="/">ÄãÊÇÊ²Ã´ÈË±ã»áÓöÉÏÊ²Ã´ÈË</a></li>
+          <li><a href="/">µÛ¹úcms ÁÐ±íÒ³µ÷ÓÃ×ÓÀ¸Ä¿£¬Ã»ÓÐÔò²»ÏÔÊ¾À¸Ä¿Ãû³Æ</a></li>
+          <li><a href="/">µÚ¶þ½ì ÓÅÐã¸öÈË²©¿ÍÄ£°å±ÈÈü²ÎÑ¡»î¶¯</a></li>
+          <li><a href="/">¸öÈË²©¿ÍÄ£°å¡¶ÉðÊ¿¡·ºóÌ¨¹ÜÀí</a></li>
+          <li><a href="/">ÄãÊÇÊ²Ã´ÈË±ã»áÓöÉÏÊ²Ã´ÈË</a></li>
+          <li><a href="/">µÛ¹úcms ÁÐ±íÒ³µ÷ÓÃ×ÓÀ¸Ä¿£¬Ã»ÓÐÔò²»ÏÔÊ¾À¸Ä¿Ãû³Æ</a></li>
+          <li><a href="/">µÚ¶þ½ì ÓÅÐã¸öÈË²©¿ÍÄ£°å±ÈÈü²ÎÑ¡»î¶¯</a></li>
+          <li><a href="/">¸öÈË²©¿ÍÄ£°å¡¶ÉðÊ¿¡·ºóÌ¨¹ÜÀí</a></li>
+        </ul>
+      </div>
+      <div class="links">
+        <h2>ÓÑÇéÁ´½Ó</h2>
+        <ul>
+          <a href="#">bozhi92¸öÈË²©¿Í</a> <a href="#">bozhi92²©¿Í</a>
+        </ul>
+      </div>
+      <div class="guanzhu">
+        <h2>¹Ø×¢ÎÒ Ã´Ã´ßÕ</h2>
+        <ul>
+          <img src="images/wx.jpg">
+        </ul>
+      </div>
+  </aside>
+  <main class="r_box">
+    <li><i><a href="/"><img src="images/1.jpg"></a></i>
+      <h3><a href="/">ÄãÊÇÊ²Ã´ÈË±ã»áÓöÉÏÊ²Ã´ÈË</a></h3>
+      <p>ÓÐÊ±¾ÍÎªÁËÒ»¾äºÝ»°£¬ÏñÐÄÍ·Ò»¿Ú¶¾¶¤£¬ÓÀÔ¶Âé¯w×ÅÇ×ÃÜ¸ÐÇé½»Á÷¡£¶ñÑÔ£¬ÕæÒªÉ÷³ö£¬Æ½ÈÕ¶àÕ\ÐÄ°®Óï£¬ÄË×î¼òÒ×Ö®ÑÊ©¡£</p>
+    </li>
+    <li><i><a href="/"><img src="images/2.jpg"></a></i>
+      <h3><a href="/">°®ÇéÃ»ÓÐÓÀÔ¶£¬µØÀÏÌì»ÄÒ²×ß²»Íê</a></h3>
+      <p>Ò²Ðí£¬°®ÇéÃ»ÓÐÓÀÔ¶£¬µØÀÏÌì»ÄÒ²×ß²»Íê£¬ÉúÃüÖÕ½áµÄÄ©¶Ë£¬¿à¶ÌÇé³¤¡£Õ¾ÔÚËêÔÂµÄ±ß¶Ë£¬ÄÇÐ©ÃÀÀöµÄ¶¨¸ñ£¬ÐÄÉËµÄ¾øÁµ£¬¶¼±»ËÄ¼¾µÄÑÚÂñ£¬Ò»È¥²»·µ¡£Í½Ê£ÏÂÕâ»ÄÎßµÄ»¨ºÃÔÂÔ²£¬Ò»Â·ÏàËæ£¬Á÷ÀëÌìÑÄ±³¸ºÁËË­µÄË¼Äî£¿</p>
+    </li>
+    <li><i><a href="/"><img src="images/3.jpg"></a></i>
+      <h3><a href="/">Å®º¢¶¼ÓÐÀËÂþµÄÐ¡Çé»³¡ª¡ªÀËÂþµÄÇó»é´Ê</a></h3>
+      <p>»¹ÔÚÎªÀËÂþµÄÇó»é´Ê¶ø·³ÄÕ²»ÖªµÀ¸ÃÔõÃ´ËµÂð£¿Å®º¢×Ó¶¼ÓÐ×ÅÀËÂþµÄÐ¡Çé»³£¬¶ÔÓÚÇó»é¸üÊÇ±§×ÅÂúÂúµÄÀËÂþÆÚ´ý£¬Ò²Ï£ÍûÔÚÇó»éÄÇÒ»Ìì¶Ô·½¿ÉÒÔ¸ø×Ô¼ºÒ»¸ö×îÀËÂþµÄÇó»é´Ê¡£</p>
+    </li>
+    <li><i><a href="/"><img src="images/4.jpg"></a></i>
+      <h3><a href="/">²Á¼ç¶ø¹ý</a></h3>
+      <p>¡¶²Á¼ç¶ø¹ý¡·ÎÄ/ÇåºÓÓã ±à»æ/Ìì³¯Óð´ò¿ªÒ»ÉÈ´°£¬ÎÒ²»Ôø°ÑÄãÏëµÃÆ½³£¡£¿´¼¾½ÚÒ»Ò»¹ýÍù¡£ÄãÍ£ÁôµÄÄÇ¸öµØ·½£¬ÊÇ·ñÒÀÈ»»¨¶ù¿ª·Å£¿ÔÚÒ¹ÀïÊØ¿¿×ÅÃÎÖÐµÄ£¬ÏëÄÇ·Â·ðÇ°ÊÀÃú¿Ì½øÐÄ³¦µÄ</p>
+    </li>
+     <li><i><a href="/"><img src="images/1.jpg"></a></i>
+      <h3><a href="/">ÄãÊÇÊ²Ã´ÈË±ã»áÓöÉÏÊ²Ã´ÈË</a></h3>
+      <p>ÓÐÊ±¾ÍÎªÁËÒ»¾äºÝ»°£¬ÏñÐÄÍ·Ò»¿Ú¶¾¶¤£¬ÓÀÔ¶Âé¯w×ÅÇ×ÃÜ¸ÐÇé½»Á÷¡£¶ñÑÔ£¬ÕæÒªÉ÷³ö£¬Æ½ÈÕ¶àÕ\ÐÄ°®Óï£¬ÄË×î¼òÒ×Ö®ÑÊ©¡£</p>
+    </li>
+    <li><i><a href="/"><img src="images/2.jpg"></a></i>
+      <h3><a href="/">°®ÇéÃ»ÓÐÓÀÔ¶£¬µØÀÏÌì»ÄÒ²×ß²»Íê</a></h3>
+      <p>Ò²Ðí£¬°®ÇéÃ»ÓÐÓÀÔ¶£¬µØÀÏÌì»ÄÒ²×ß²»Íê£¬ÉúÃüÖÕ½áµÄÄ©¶Ë£¬¿à¶ÌÇé³¤¡£Õ¾ÔÚËêÔÂµÄ±ß¶Ë£¬ÄÇÐ©ÃÀÀöµÄ¶¨¸ñ£¬ÐÄÉËµÄ¾øÁµ£¬¶¼±»ËÄ¼¾µÄÑÚÂñ£¬Ò»È¥²»·µ¡£Í½Ê£ÏÂÕâ»ÄÎßµÄ»¨ºÃÔÂÔ²£¬Ò»Â·ÏàËæ£¬Á÷ÀëÌìÑÄ±³¸ºÁËË­µÄË¼Äî£¿</p>
+    </li>
+    <li><i><a href="/"><img src="images/3.jpg"></a></i>
+      <h3><a href="/">Å®º¢¶¼ÓÐÀËÂþµÄÐ¡Çé»³¡ª¡ªÀËÂþµÄÇó»é´Ê</a></h3>
+      <p>»¹ÔÚÎªÀËÂþµÄÇó»é´Ê¶ø·³ÄÕ²»ÖªµÀ¸ÃÔõÃ´ËµÂð£¿Å®º¢×Ó¶¼ÓÐ×ÅÀËÂþµÄÐ¡Çé»³£¬¶ÔÓÚÇó»é¸üÊÇ±§×ÅÂúÂúµÄÀËÂþÆÚ´ý£¬Ò²Ï£ÍûÔÚÇó»éÄÇÒ»Ìì¶Ô·½¿ÉÒÔ¸ø×Ô¼ºÒ»¸ö×îÀËÂþµÄÇó»é´Ê¡£</p>
+    </li>
+    <li><i><a href="/"><img src="images/4.jpg"></a></i>
+      <h3><a href="/">²Á¼ç¶ø¹ý</a></h3>
+      <p>¡¶²Á¼ç¶ø¹ý¡·ÎÄ/ÇåºÓÓã ±à»æ/Ìì³¯Óð´ò¿ªÒ»ÉÈ´°£¬ÎÒ²»Ôø°ÑÄãÏëµÃÆ½³£¡£¿´¼¾½ÚÒ»Ò»¹ýÍù¡£ÄãÍ£ÁôµÄÄÇ¸öµØ·½£¬ÊÇ·ñÒÀÈ»»¨¶ù¿ª·Å£¿ÔÚÒ¹ÀïÊØ¿¿×ÅÃÎÖÐµÄ£¬ÏëÄÇ·Â·ðÇ°ÊÀÃú¿Ì½øÐÄ³¦µÄ</p>
+    </li>
+    <li>
+      <h3><a href="/">Å®º¢¶¼ÓÐÀËÂþµÄÐ¡Çé»³¡ª¡ªÀËÂþµÄÇó»é´Ê</a></h3>
+      <p>»¹ÔÚÎªÀËÂþµÄÇó»é´Ê¶ø·³ÄÕ²»ÖªµÀ¸ÃÔõÃ´ËµÂð£¿Å®º¢×Ó¶¼ÓÐ×ÅÀËÂþµÄÐ¡Çé»³£¬¶ÔÓÚÇó»é¸üÊÇ±§×ÅÂúÂúµÄÀËÂþÆÚ´ý£¬Ò²Ï£ÍûÔÚÇó»éÄÇÒ»Ìì¶Ô·½¿ÉÒÔ¸ø×Ô¼ºÒ»¸ö×îÀËÂþµÄÇó»é´Ê¡£</p>
+    </li>
+    <li><i><a href="/"><img src="images/5.jpg"></a></i>
+      <h3><a href="/">²Á¼ç¶ø¹ý</a></h3>
+      <p>¡¶²Á¼ç¶ø¹ý¡·ÎÄ/ÇåºÓÓã ±à»æ/Ìì³¯Óð´ò¿ªÒ»ÉÈ´°£¬ÎÒ²»Ôø°ÑÄãÏëµÃÆ½³£¡£¿´¼¾½ÚÒ»Ò»¹ýÍù¡£ÄãÍ£ÁôµÄÄÇ¸öµØ·½£¬ÊÇ·ñÒÀÈ»»¨¶ù¿ª·Å£¿ÔÚÒ¹ÀïÊØ¿¿×ÅÃÎÖÐµÄ£¬ÏëÄÇ·Â·ðÇ°ÊÀÃú¿Ì½øÐÄ³¦µÄ</p>
+    </li>
+    <li><i><a href="/"><img src="images/6.jpg"></a></i>
+      <h3><a href="/">Å®º¢¶¼ÓÐÀËÂþµÄÐ¡Çé»³¡ª¡ªÀËÂþµÄÇó»é´Ê</a></h3>
+      <p>»¹ÔÚÎªÀËÂþµÄÇó»é´Ê¶ø·³ÄÕ²»ÖªµÀ¸ÃÔõÃ´ËµÂð£¿Å®º¢×Ó¶¼ÓÐ×ÅÀËÂþµÄÐ¡Çé»³£¬¶ÔÓÚÇó»é¸üÊÇ±§×ÅÂúÂúµÄÀËÂþÆÚ´ý£¬Ò²Ï£ÍûÔÚÇó»éÄÇÒ»Ìì¶Ô·½¿ÉÒÔ¸ø×Ô¼ºÒ»¸ö×îÀËÂþµÄÇó»é´Ê¡£</p>
+    </li>
+    <li><i><a href="/"><img src="images/7.jpg"></a></i>
+      <h3><a href="/">ÄãÊÇÊ²Ã´ÈË±ã»áÓöÉÏÊ²Ã´ÈË</a></h3>
+      <p>ÓÐÊ±¾ÍÎªÁËÒ»¾äºÝ»°£¬ÏñÐÄÍ·Ò»¿Ú¶¾¶¤£¬ÓÀÔ¶Âé¯w×ÅÇ×ÃÜ¸ÐÇé½»Á÷¡£¶ñÑÔ£¬ÕæÒªÉ÷³ö£¬Æ½ÈÕ¶àÕ\ÐÄ°®Óï£¬ÄË×î¼òÒ×Ö®ÑÊ©¡£</p>
+    </li>
+    <li><i><a href="/"><img src="images/8.jpg"></a></i>
+      <h3><a href="/">°®ÇéÃ»ÓÐÓÀÔ¶£¬µØÀÏÌì»ÄÒ²×ß²»Íê</a></h3>
+      <p>Ò²Ðí£¬°®ÇéÃ»ÓÐÓÀÔ¶£¬µØÀÏÌì»ÄÒ²×ß²»Íê£¬ÉúÃüÖÕ½áµÄÄ©¶Ë£¬¿à¶ÌÇé³¤¡£Õ¾ÔÚËêÔÂµÄ±ß¶Ë£¬ÄÇÐ©ÃÀÀöµÄ¶¨¸ñ£¬ÐÄÉËµÄ¾øÁµ£¬¶¼±»ËÄ¼¾µÄÑÚÂñ£¬Ò»È¥²»·µ¡£Í½Ê£ÏÂÕâ»ÄÎßµÄ»¨ºÃÔÂÔ²£¬Ò»Â·ÏàËæ£¬Á÷ÀëÌìÑÄ±³¸ºÁËË­µÄË¼Äî£¿</p>
+    </li>
+    <li><i><a href="/"><img src="images/9.jpg"></a></i>
+      <h3><a href="/">²Á¼ç¶ø¹ý</a></h3>
+      <p>¡¶²Á¼ç¶ø¹ý¡·ÎÄ/ÇåºÓÓã ±à»æ/Ìì³¯Óð´ò¿ªÒ»ÉÈ´°£¬ÎÒ²»Ôø°ÑÄãÏëµÃÆ½³£¡£¿´¼¾½ÚÒ»Ò»¹ýÍù¡£ÄãÍ£ÁôµÄÄÇ¸öµØ·½£¬ÊÇ·ñÒÀÈ»»¨¶ù¿ª·Å£¿ÔÚÒ¹ÀïÊØ¿¿×ÅÃÎÖÐµÄ£¬ÏëÄÇ·Â·ðÇ°ÊÀÃú¿Ì½øÐÄ³¦µÄ</p>
+    </li>
+  </main>
+</article>
+<footer>
+  <p>bozhi92 by 2018</p>
+</footer>
+<a href="#" class="cd-top">Top</a>
 </body>
-
 </html>
