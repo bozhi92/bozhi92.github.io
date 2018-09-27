@@ -11,6 +11,21 @@
 <script type="text/javascript" src="js/hc-sticky.js"></script>
 <script type="text/javascript" src="js/comm.js"></script>
 <script type="text/javascript" src="js/anosa.js"></script>
+<script type="text/javascript">
+		function gogo() {
+		console.log('ok');
+		$.ajax({
+			method:'GET',
+			url:'json/list.json',
+			success:function(data){
+				console.log('ok');
+				console.log(data);
+			}
+		})
+		}
+		
+	
+</script>
 <!--[if lt IE 9]>
 <script src="js/modernizr.js"></script>
 <![endif]-->
@@ -18,7 +33,7 @@
 <body>
 <header class="header-navigation" id="header">
   <nav>
-    <div class="logo"><a href="/">bozhi92个人博客</a></div>
+    <div class="logo"><a href="#" onclick="gogo()">bozhi92个人博客</a></div>
     <h2 id="mnavh"><span class="navicon"></span></h2>
     <ul id="starlist">
       <li><a href="index.html">网站首页</a></li>
@@ -138,17 +153,6 @@
   <p>Design by <a href="#" target="_blank">bozhi92个人博客</a></p>
 </footer>
 <a href="#" class="cd-top">Top</a>
-<script type="text/javascript">
-	$(function(){
-		ajax({
-			method:'GET',
-			url:' https://www.easy-mock.com/mock/5bac4589605ad16cf5ffbfb2/api/test',
-			success:function(data){
-				console.log('ok');
-				console.log(data);
-			}
-		})
-	})
-</script>
+
 </body>
 </html>
