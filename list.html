@@ -17,7 +17,15 @@
 			method:'GET',
 			url:'json/list.json',
 			success:function(data){
-				console.log(data);
+				$.each(data.data, function(i){
+					var article = '<li>'
+							+'<i><a href="/"><img src="'+i.image+'"></a></i>'
+							+'<h3><a href="/">'+i.title+'</a></h3>'
+							+'<p>'+i.content+'</p>'
+							+'</li>';
+				$(".r_box").prepend(article);
+				})
+				
 			}
 		})
 	}
