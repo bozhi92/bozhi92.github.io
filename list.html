@@ -16,7 +16,9 @@
 		$.ajax({
 			method:'GET',
 			url:'json/list.json',
+			dataType:'text',
 			success:function(data){
+			console.log("ok");
 				$.each(data.data, function(i){
 					var article = '<li>'
 							+'<i><a href="/"><img src="'+i.image+'"></a></i>'
@@ -26,6 +28,9 @@
 				$(".r_box").prepend(article);
 				})
 				
+			},
+			error:function(data){
+				console.log("error");
 			}
 		})
 	}
