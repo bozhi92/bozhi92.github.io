@@ -1,81 +1,157 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>简历-brukfeng</title>
-	<link rel="stylesheet" href="css/amazeui.min.css">
-	<style type="text/css">
-	body{
-		background-color: #24292e
-	}
-	.main{
-		background-color: white;
-		margin: 10px auto;
-	}
-	.split{
-		margin: 0 10px; 
-		color: #b9b9b9;
-	}
-	.tag{
-		border-left: 3px solid #3bb4f2;
-		padding: 0 1em;
-	}
-	.block{
-		margin-left: 10px; font-size: .8em;
-	}
-	</style>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./thirdPart/layui/css/layui.css">
 </head>
 <body>
-	<div class="am-g am-g-fixed main">
-		<div style="margin: 10px 30px;">
-			<h2>冯博智</h2>
-			<p>26岁<span class="split">|</span>男<span class="split">|</span>2年工作经验</p>
-			<p><span class="am-icon-phone"> 17615041713</span><span class="split">|</span><span class="am-icon-envelope"> 1194659171@qq.com</span></p>
-			<h3 class="tag">个人优势</h3>
-			<div class="block">
-				<p>两年java开发工作经验，热爱研究新技术，责任心强，希望与志同道合的团队一同努力</p>
-			</div>
-
-			<h3 class="tag">期望职位</h3>
-			<div class="block">
-				<p>Java中级工程师</p>
-			</div>
-
-			<h3 class="tag">工作经历</h3>
-			<div class="block">
-				<h4>北京荣之联科技股份有限公司</h4>
-				<p>软件工程师<span class="split">|</span>研发部<span class="split">|</span>2018.08 - 至今</p>
-				<p>工作内容：与其他成员沟通配合，根据产品需求进行系统或模块的设计与开发，包括数据模型与接口的定义业务逻辑的设计。配合测试人员完成测试，定位和解决bug，完成产品上线任务。</p>
-				<h4>北京弘成科技发展有限公司</h4>
-				<p>Java初级工程师<span class="split">|</span>研发部<span class="split">|</span>2017.02 - 2018.08</p>
-				<p>工作内容：负责具体功能的开发任务，配合测试人员完成测试，定和解决bug。</p>
+	<div class="layui-main" style="height:1000px">
+		<div class="layui-row">
+			<div class="layui-col-md12">
+				<table id="itable" lay-filter="test"></table>
 			</div>
 			
-			<h3 class="tag">项目经历</h3>
-			<div class="block">
-				<h4>imonitor新闻传播监测</h4>
-				<p>研发成员<span class="split">|</span>2018.10 - 2018.12</p>
-				<p>项目描述：从用户定制的网站，微信公众号，微博或其他来源平台爬取文章及评论。计算文章转载关系，传播力，统计文章转载，评论，阅读，点赞数量。评论的正负面指数，典型意见。文章传播的爆发点及传播路径图。平台间的数据对比。</p>
-
-				<h4>iknows智慧舆情</h4>
-				<p>研发成员<span class="split">|</span>2018.19 - 2018.12</p>
-				<p>项目描述：用户通过配置匹配监测时间范围，关键词，地域范围，排除词，预警词或预警模型，媒体来源等信息来创建监测方案。监测方案分常规，人物，事件，文稿几类。全网爬取的文章和监测方案进行匹配，命中监测的用户可在监测中心查看，命中预警的向用户发送通知。可生成日，周, 月的监测统计报表。监测中心提供监测内容发生的地图热区，媒体分布，来源排行，趋势图，词云等展示信息。舆情头条展示最近的本地热点和全国文章。</p>
-
-				<h4>imonitor新闻传播监测</h4>
-				<p>研发成员<span class="split">|</span>2018.08 - 2018.12</p>
-				<p>项目描述：从各大新闻媒体网站，微博，微信，app，自媒体等来源爬取新闻。经NLP计算热点聚类，文章正负面，提取命名实体，文章概要。热点新闻持续一段时间后转为专题事件给用户提供事件的跟踪报道，事件的时间轴，发展脉络，媒体的报道统计。专题也可以由用户定制。用户可以通过关键词，地域，来源媒体，时间等来定制新闻线索，追踪自己关心的新闻。根据用户设置的地域，分类，关键词标签提供推荐新闻。</p>
+		</div>
+		
+	</div>
+	<div class="layui-fluid">
+		<div class="layui-row">
+			<div class="layui-col-md8">
+				<div class="layui-card">
+					<div class="layui-card-header">卡片面板</div>
+		  			<div id="viewer" class="layui-card-body"></div>
+				</div>		
 			</div>
-
-			<h3 class="tag">教育经历</h3>
-			<div class="block">
-				<h4>辽宁工程技术大学</h4>
-				<p>信息与计算科学<span class="split">|</span>本科<span class="split">|</span>2010.09 - 2016.07</p>
+			<div class="layui-col-md4">
+				<form class="layui-form">
+					<div class="layui-form-item">
+						<label class="layui-form-label">XPATH</label>
+						<div class="layui-input-block">
+							<input type="text" name="xpath" class="layui-input">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="layui-row">
+			<div class="layui-col-md12">
+				
 			</div>
 		</div>
 	</div>
+<script type="text/javascript" src="./thirdPart/layui/layui.all.js">
+</script>
+<script type="text/javascript" src="http://39.96.63.76:8073/v1/common/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+<script type="text/javascript">
 	
-<!--[if (gte IE 9)|!(IE)]><!-->
-<script src="css/jquery.min.js"></script>
-<!--<![endif]-->
-<script src="css/amazeui.min.js"></script>
+	var table = layui.table;
+	var layer = layui.layer;
+	var token = '';
+	table.render({
+		id:'table1',
+		elem:'#itable',
+		hight:200,
+		page:true,
+		url:'http://39.96.67.106:8099/irobot/listpage/list',
+		headers:{
+			'token':token
+		},
+		request:{
+			pageName:'pageNum',
+			limitName:'pageSize'
+		},
+		cols:[[
+			{
+				field:'websiteName', 
+				title:'网站名称'
+			},
+			{
+				field:'name', 
+				title:'来源名称'
+			},
+			{
+				field:'mark', 
+				title:'列表链接'
+				// templet:function(d){
+				// 	return '<a href="'+d.mark+'" target="_blank">'+d.mark+'</a>';
+				// }
+			},
+			{
+				field:'updateTime',
+				 title:'更新时间'
+			}
+		]],
+		response: {
+      		statusCode: 200 //重新规定成功的状态码为 200，table 组件默认为 0
+    	},
+		parseData: function(res){ //res 即为原始返回的数据
+			if (res.code != '200') {
+				console.error(res.message);
+				if(res.code == '103') {
+					$.ajax({
+						url:'http://39.96.67.106:8099/irobot/user/login',
+						type:'POST',
+						contentType:'application/json',
+						data:JSON.stringify({
+							"userName":"brukfeng",
+							"password":"e5daaad5cfe67ab5c688c0e692114cf2ee0d50b88fdb508042878011e7501fad"
+						}),
+						dataType:"json",
+						success:function(d) {
+							token = d.data.token;
+							refresh({
+								headers:{
+									'token':d.data.token
+								}
+							});
+						}
+					})
+				}
+				return {
+					"code": res.code, //解析接口状态
+      				"msg": res.message, //解析提示文本
+      				"count": 0, //解析数据长度
+      				"data": [] //解析数据列表
+				}
+			}
+    		return {
+      			"code": res.code, //解析接口状态
+      			"msg": res.message, //解析提示文本
+      			"count": res.data.totalCount, //解析数据长度
+      			"data": res.data.dataList //解析数据列表
+    		};
+  		}
+	});
+
+	function refresh(opt){
+		table.reload('table1',opt);
+	}
+
+	function open(url){
+		var height = document.body.offsetHeight
+		var width = document.body.offsetWidth;
+		layer.open({
+			title:false,
+  			type: 2,
+  			area:[(width*0.6)+'px',(height*0.8)+'px'],
+  			content: url //这里content是一个URL，如果你不想让iframe出现滚动条，你还可以content: ['http://sentsin.com', 'no']
+		}); 
+	}
+
+	table.on('row(test)', function(obj){
+  		console.log(obj.tr) //得到当前行元素对象
+  		console.log(obj.data) //得到当前行数据
+  	//obj.del(); //删除当前行
+  //obj.update(fields) //修改当前行数据
+  		//open(obj.data.mark)
+  		$.ajax({
+  			url:'http://39.96.67.106:8099/irobot/detailPage/getDetail?code='+obj.data.code,
+  			headers:{'token':token},
+  			success:function(d){
+  				$('#viewer').html(d.data.html);
+  			}
+  		})
+	});
+</script>
 </body>
 </html>
